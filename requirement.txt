@@ -1,0 +1,177 @@
+# FoodCare - Food Donation Platform
+
+## Project Overview
+
+FoodCare is a web-based food donation platform that connects food donors (individuals, restaurants, organizations) with NGOs and shelters to reduce food waste and fight hunger in communities. The platform facilitates real-time donation tracking, pickup coordination, and impact measurement.
+
+## Features
+
+### Core Features
+- **Food Donation Management**: Create, track, and manage food donations
+- **NGO Request System**: NGOs can request specific food items based on their needs
+- **Real-time Tracking**: Track donation status from creation to distribution
+- **User Authentication**: Separate profiles for donors and NGOs
+- **Mobile-Responsive Design**: Optimized for all devices
+
+### Key Pages
+- **Home Page** (`index.html`): Landing page with overview and impact statistics
+- **Donation Form** (`donate.html`): Create new food donations with details
+- **NGO Requests** (`ngo.html`): Browse and respond to NGO food requests
+- **User Dashboard**: Personal dashboard for tracking donations and impact
+
+## Technical Requirements
+
+### Frontend Technologies
+- **HTML5**: Semantic markup structure
+- **CSS3**: Advanced styling with modern features
+  - CSS Grid and Flexbox for layouts
+  - CSS Custom Properties (Variables)
+  - CSS Animations and Transitions
+  - Backdrop-filter for glassmorphism effects
+  - Media queries for responsive design
+- **Vanilla JavaScript**: Client-side functionality
+  - DOM manipulation
+  - Event handling
+  - Local Storage for data persistence
+  - Form validation
+  - Dynamic content rendering
+
+### Design System
+- **Color Palette**: 
+  - Primary: #e74c3c (Red)
+  - Secondary: #667eea, #764ba2 (Purple gradients)
+  - Accent: #f093fb, #ffecd2 (Pink/Yellow gradients)
+- **Typography**: Inter font family
+- **UI Components**: Glassmorphism design with blur effects
+- **Icons**: Unicode emoji icons for consistency
+
+### Browser Support
+- Modern browsers (Chrome 90+, Firefox 88+, Safari 14+, Edge 90+)
+- CSS Grid and Flexbox support required
+- JavaScript ES6+ features used
+
+## File Structure
+
+```
+foodcare/
+├── index.html              # Landing page
+├── donate.html            # Donation creation form
+├── ngo.html               # NGO requests view
+├── retirement.py          # Data lifecycle management (Python)
+├── Img/                   # Image assets
+│   ├── main-pic.jpg
+│   ├── donate.jpg
+│   ├── pic04.jpg
+│   └── team.jpg
+├── README.md             # Project documentation
+└── requirements.txt      # Project dependencies
+```
+
+## Data Models
+
+### Donation Object
+```javascript
+{
+  id: String,
+  donorName: String,
+  title: String,
+  qty: Number,
+  category: String, // 'cooked', 'raw', 'packaged'
+  expiry: Date,
+  address: String,
+  notes: String,
+  status: String, // 'active', 'completed', 'expired'
+  createdAt: Date
+}
+```
+
+### NGO Request Object
+```javascript
+{
+  id: Number,
+  title: String,
+  ngo: String,
+  location: String,
+  quantity: String,
+  foodType: String, // 'cooked', 'raw'
+  dietType: String, // 'veg', 'non-veg'
+  urgency: String, // 'high', 'medium', 'low'
+  timeNeeded: String,
+  status: String, // 'pending', 'completed', 'expired'
+  beneficiaries: Number,
+  contact: String,
+  tags: Array,
+  description: String
+}
+```
+
+## Functionality Requirements
+
+### Donation Management
+- Create new donations with form validation
+- Category selection (Cooked Meals, Fresh Produce, Packaged Foods)
+- Expiry date handling
+- Real-time status updates
+- Local storage persistence
+
+### NGO Request System
+- Display available NGO requests
+- Filter by food type, dietary preference, urgency
+- Search functionality with tags
+- Accept/reject requests
+- Contact information display
+
+### User Interface
+- Responsive design (mobile-first approach)
+- Smooth animations and transitions
+- Loading states and feedback
+- Error handling and validation
+- Accessibility features
+
+### Statistics & Analytics
+- Real-time impact counters
+- Donation tracking
+- User contribution history
+- NGO request metrics
+
+## Performance Requirements
+- Page load time < 3 seconds
+- Smooth animations (60fps)
+- Optimized images and assets
+- Efficient DOM manipulation
+
+## Security Considerations
+- Input validation and sanitization
+- XSS prevention
+- Safe handling of user data
+- No sensitive data in localStorage
+
+## Accessibility Requirements
+- WCAG 2.1 AA compliance
+- Proper semantic HTML
+- Keyboard navigation support
+- Screen reader compatibility
+- High contrast support
+- Focus indicators
+
+## Browser Storage
+- Uses localStorage for demo data persistence
+- No external database dependencies
+- Client-side data management
+
+## Development Setup
+
+### Prerequisites
+- Modern web browser
+- Text editor/IDE
+- Local web server (optional, for testing)
+
+### Installation
+1. Clone the repository
+2. Open `index.html` in a web browser
+3. No build process or dependencies required
+
+## Deployment Requirements
+- Static hosting compatible (GitHub Pages, Netlify, Vercel)
+- HTTPS recommended for security
+- CDN for image assets (optional)
