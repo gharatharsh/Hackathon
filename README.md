@@ -8,7 +8,7 @@ FoodCare is a web-based platform that bridges the gap between food donors and NG
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/foodcare.git
+   git clone https://github.com/gharatharsh/foodcare.git
    cd foodcare
    ```
 
@@ -161,18 +161,9 @@ Found a bug? Please create an issue with:
 - 📈 Advanced analytics dashboard
 - 🤖 AI-powered donation matching
 
-## 🏆 Hackathon Context
-
-This project was developed for the **Food Donation Hackathon** with the theme "Food Donation With NGO And Donor". The goal is to create a technology solution that:
-- Reduces food waste
-- Connects surplus food with those in need
-- Streamlines the donation process
-- Provides transparency and tracking
-
 ## 📞 Contact
 
-- **Project Lead**: [Harsh Gharat]
-- **GitHub**:https://github.com/gharatharsh)
+- **GitHub**:https://github.com/gharatharsh
 - **Email**: harshgharat2005@gmail.com
 
 ## 🙏 Acknowledgments
@@ -182,5 +173,4 @@ This project was developed for the **Food Donation Hackathon** with the theme "F
 - Open source community for inspiration and resources
 
 ---
-
 **Made with ❤️ to end hunger together**
