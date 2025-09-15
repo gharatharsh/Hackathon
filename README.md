@@ -86,38 +86,6 @@ The application includes sample data for demonstration:
 - Sample donation statistics and metrics
 - Different food categories and dietary preferences
 
-## 🚀 Deployment
-
-### GitHub Pages
-1. Push code to GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Select source branch (usually `main`)
-4. Your site will be available at `https://yourusername.github.io/foodcare`
-
-### Other Platforms
-- **Netlify**: Drag and drop the project folder
-- **Vercel**: Connect your GitHub repository
-- **Firebase Hosting**: Use Firebase CLI to deploy
-
-## 🔧 Development
-
-### Prerequisites
-- Modern web browser (Chrome 90+, Firefox 88+, Safari 14+)
-- Text editor or IDE
-- Basic knowledge of HTML, CSS, JavaScript
-
-### Local Development
-No build process required! Simply:
-1. Edit HTML/CSS/JS files directly
-2. Refresh browser to see changes
-3. Use browser developer tools for debugging
-
-### Code Style
-- Semantic HTML structure
-- CSS custom properties for theming
-- Modern JavaScript (ES6+)
-- Mobile-first responsive design
-
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
